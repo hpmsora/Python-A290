@@ -1,0 +1,137 @@
+Using username "woha".
+woha@silo.soic.indiana.edu's password:
+Last login: Thu Aug 25 09:27:57 2016 from 140-182-198-158.dhcp-bl.indiana.edu
+
+
+*******************************************************************
+**   Indiana University School of Informatics and Computing      **
+**             ** For Authorized Use Only **                     **
+*******************************************************************
+**  For general SoIC computing information, please see:          **
+**      http://help.soic.indiana.edu/                            **
+**                                                               **
+**  To submit a problem report or question, please see:          **
+**      http://help.soic.indiana.edu/request                     **
+*******************************************************************
+
+
+[woha@silo ~]$ python3
+Python 3.5.2 (default, Aug 19 2016, 07:40:05)
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-4)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+3
+5
+>>> 7-5
+2
+>>> 2*(3+1)
+8
+>>> 5/2
+2.5
+>>> 5//2
+2
+>>> 14//3
+4
+>>> 14%3
+2
+>>> 2**3
+8
+>>> abs(-3.2)
+3.2
+>>> min(23,41,15,24)
+15
+>>> max(23,41,15,24)
+41
+>>> 2<3 and 3<4
+True
+>>> 4==5 and 3<4
+False
+>>> False and True
+False
+>>> True and True
+True
+>>> 4 == 5 or 3<4
+True
+>>> False or True
+True
+>>> False or False
+False
+>>> not (3<4)
+False
+>>> not True
+False
+>>> not False
+True
+>>> 4+1 == 5 or 4 - 1 <4
+True
+>>>
+>>> 25 - 21
+4
+>>> 14.99 + 27.95 + 19.83
+62.769999999999996
+>>> 20*15
+300
+>>> 17%5
+2
+>>> 284%2 == 0 and 284%3 == 0
+False
+>>> x = 3
+>>> x
+3
+>>> 4*x
+12
+>>> y
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'y' is not defined
+>>> y = 4*x
+>>> y
+12
+>>> my_x2 = 21
+>>> my_x2
+21
+>>> 2x
+  File "<stdin>", line 1
+    2x
+     ^
+SyntaxError: invalid syntax
+>>> 2x = 22
+  File "<stdin>", line 1
+    2x = 22
+     ^
+SyntaxError: invalid syntax
+>>> new_temp = 23
+>>> new
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'new' is not defined
+>>> newTemp = 23
+>>> count  = 0
+>>> temp = 1
+>>> price = 2
+>>> age = 3
+>>> temp
+1
+>>> age
+3
+>>> count
+0
+>>> newTemp
+23
+>>> 'Hello, World'
+'Hello, World'
+>>> s = 'rock'
+>>> t = 'climbing'
+>>> user_name=input("Please enter your name:")
+Please enter your name:Rose Daniel
+>>> use_number=input(
+... "Please enter your age:")
+Please enter your age:23
+>>> print("Welcome, ", user_name, ".")
+Welcome,  Rose Daniel .
+>>> print("Double your age is: ", float(user_number)*2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'user_number' is not defined
+>>> print("Double your age is: ", float(use_number)*2)
+Double your age is:  46.0
+>>>
