@@ -40,7 +40,7 @@ if 'large bonuses' in report:
 hits = input("Enter the hits: ")
 shield = input("Enter the shield: ")
 
-if hits > 10 and shield == 0:
+if hits > 10 and shield < 0:
     print('You lose... ')
 
 
