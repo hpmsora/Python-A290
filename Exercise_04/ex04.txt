@@ -1,0 +1,726 @@
+Last login: Wed Sep  7 16:09:36 on ttys000
+140-182-198-229:~ Owl$ ssh woha@silo.soic.indiana.edu
+woha@silo.soic.indiana.edu's password: 
+Permission denied, please try again.
+woha@silo.soic.indiana.edu's password: 
+Permission denied, please try again.
+woha@silo.soic.indiana.edu's password: 
+Last failed login: Wed Sep  7 16:10:44 EDT 2016 from 140-182-198-229.dhcp-bl.indiana.edu on ssh:notty
+There were 2 failed login attempts since the last successful login.
+Last login: Tue Sep  6 09:58:54 2016 from 140-182-198-229.dhcp-bl.indiana.edu
+
+
+*******************************************************************
+**   Indiana University School of Informatics and Computing      **
+**             ** For Authorized Use Only **                     **
+*******************************************************************
+**  For general SoIC computing information, please see:          **
+**      http://help.soic.indiana.edu/                            **
+**                                                               **
+**  To submit a problem report or question, please see:          **
+**      http://help.soic.indiana.edu/request                     **
+*******************************************************************
+
+
+[woha@silo ~]$ ls
+apache-tomcat-7.0.35  C-Language-C-and-Unix-A290  Downloads  P442         tmp
+C212                  CS-Spring-2016              equa       Python-A290
+[woha@silo ~]$ python3
+Python 3.5.2 (default, Aug 19 2016, 07:40:05) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-4)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for i in range(2, 16, 10):
+...     print(i)
+... 
+2
+12
+>>> for fruit in ['pear', 'apple', 'peach', 'plum']
+  File "<stdin>", line 1
+    for fruit in ['pear', 'apple', 'peach', 'plum']
+                                                  ^
+SyntaxError: invalid syntax
+>>> for fruit in ['pear', 'apple', 'peach', 'plum']:
+...     print(fruit.upper())
+... 
+PEAR
+APPLE
+PEACH
+PLUM
+>>> fruits = []
+>>> for fruit in ['pear', 'apple', 'peach', 'plum']:
+...     fruits.append(fruit.upper())
+... 
+>>> print(fruits)
+['PEAR', 'APPLE', 'PEACH', 'PLUM']
+>>> n = 10
+>>> for i in range(n):
+...     print(i, end=' ')
+... 
+0 1 2 3 4 5 6 7 8 9 >>> 
+>>> for i in range(7, 100, 17):
+...     print(i, end= ' ')
+... 
+7 24 41 58 75 92 >>> 
+>>> for i in range(len('world')):
+...     print(i, end=' ')
+... 
+0 1 2 3 4 >>> 
+>>> i = 7
+>>> while i <= 37:
+...     i += 7
+... 
+>>> i
+42
+>>> quit()
+[woha@silo ~]$ exit
+logout
+Connection to silo.soic.indiana.edu closed.
+140-182-198-229:~ Owl$ ls
+AndroidStudioProjects  Google Drive
+Applications	       	      Library
+Desktop					Movies
+Documents					Music
+Downloads						Pictures
+Dropbox									Public
+140-182-198-229:~ Owl$ cd Desktop/Python-A290/
+140-182-198-229:Python-A290 Owl$ ls
+Exercise_01		    Exercise_04	j1.py
+Exercise_02		    Homework01	j2.py
+Exercise_03		    README.md	j2.py~
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python j2.py
+  File "j2.py", line 4
+    print(i, end=' ')
+                ^
+SyntaxError: invalid syntax
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: d
+1
+140-182-198-229:Python-A290 Owl$ python3
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 26 2016, 10:47:25) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: d
+1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'j2.py'; 'j2' is not a package
+>>> printList
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'printList' is not defined
+>>> printList()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'printList' is not defined
+>>> cd ..
+  File "<stdin>", line 1
+    cd ..
+        ^
+SyntaxError: invalid syntax
+>>> quit()
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+red
+green
+blue
+purple
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: e
+Enter city: d
+Enter city: 
+red
+green
+blue
+purple
+Enter any: e
+Enter any: g
+Enter any: 
+Enter any: 
+Enter any:  
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: r
+Enter city: e
+Enter city: 
+['r', 'e']
+red
+green
+blue
+purple
+Enter any: e
+Enter any: b
+Enter any: d
+Enter any: 3
+Enter any: d
+Enter any: 
+['e', 'b', 'd', '3', 'd']
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: t
+Enter city: e
+Enter city: r
+Enter city: 
+['t', 'e', 'r']
+red
+green
+blue
+purple
+Enter any: f
+Enter any: e
+Enter any: d
+Enter any: d
+Enter any: 3
+Enter any: 
+['f', 'e', 'd', 'd', '3']
+Enter number: 40
+Traceback (most recent call last):
+  File "j2.py", line 83, in <module>
+    checking()
+  File "j2.py", line 79, in checking
+    if number > 50:
+TypeError: unorderable types: str() > int()
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: e
+Enter city: 
+['e']
+red
+green
+blue
+purple
+Enter any: r
+Enter any: 
+['r']
+Enter number: 34
+Traceback (most recent call last):
+  File "j2.py", line 84, in <module>
+    checking()
+  File "j2.py", line 80, in checking
+    if number > 50:
+TypeError: unorderable types: str() > int()
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: r
+Enter city: 
+['r']
+red
+green
+blue
+purple
+Enter any: e
+Enter any: 
+['e']
+Enter number: 34
+Enter number: 53
+Enter number: 2
+Enter number: 3
+Enter number: 
+Enter number: 
+Enter number: 43
+Enter number: stop
+Enter number: sop
+Enter number: stop
+stop
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Enter number: stop
+Enter number: stop
+stop
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: ^[[A^[[A^[[A^CTraceback (most recent call last):
+  File "j2.py", line 26, in <module>
+    text = input("Enter any text: ")
+KeyboardInterrupt
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: e
+1
+Enter city: r
+Enter city: e
+Enter city: 
+['r', 'e']
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Enter number: stop
+Enter number: 34
+Enter number: 23
+Enter number: stop
+0
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Enter number: 12
+Enter number: stop
+sumup
+Enter number: 123
+Enter number: 23
+Enter number: 
+Enter number: stop
+0
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+AA
+Enter number: 55
+AA
+Enter number: 3
+AA
+Enter number: ^CTraceback (most recent call last):
+  File "j2.py", line 87, in <module>
+    checking()
+  File "j2.py", line 76, in checking
+    number = input('Enter number: ')
+KeyboardInterrupt
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Enter number: 23
+Enter number: 5
+Enter number: 4
+Enter number: 
+Enter number: 3
+Enter number: stop
+sumup
+Enter number: 34
+Enter number: 2
+Enter number: stop
+0
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+34
+AA
+Enter number: ^CTraceback (most recent call last):
+  File "j2.py", line 87, in <module>
+    checking()
+  File "j2.py", line 76, in checking
+    number = input('Enter number: ')
+KeyboardInterrupt
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text:  
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+34
+<class 'str'>
+AA
+Enter number: ^CTraceback (most recent call last):
+  File "j2.py", line 88, in <module>
+    checking()
+  File "j2.py", line 76, in checking
+    number = input('Enter number: ')
+KeyboardInterrupt
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text:         
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Traceback (most recent call last):
+  File "j2.py", line 85, in <module>
+    checking()
+  File "j2.py", line 81, in checking
+    if number > 50:
+TypeError: unorderable types: str() > int()
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+  File "j2.py", line 81
+    else:
+       ^
+SyntaxError: invalid syntax
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Traceback (most recent call last):
+  File "j2.py", line 86, in <module>
+    checking()
+  File "j2.py", line 82, in checking
+    if number > 50:
+TypeError: unorderable types: str() > int()
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Less than 50
+Enter number: 56
+Greater than 50
+Enter number: sto
+Traceback (most recent call last):
+  File "j2.py", line 86, in <module>
+    checking()
+  File "j2.py", line 81, in checking
+    number = int(number)
+ValueError: invalid literal for int() with base 10: 'sto'
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 45
+2
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Less than 50
+Enter number: stop
+sumup
+Enter number: 92]
+Traceback (most recent call last):
+  File "j2.py", line 100, in <module>
+    print(sumup())
+  File "j2.py", line 97, in sumup
+    number = int(number)
+ValueError: invalid literal for int() with base 10: '92]'
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 
+Traceback (most recent call last):
+  File "j2.py", line 86, in <module>
+    checking()
+  File "j2.py", line 81, in checking
+    number = int(number)
+ValueError: invalid literal for int() with base 10: ''
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Enter number: 34
+Less than 50
+Enter number: stop
+sumup
+Enter number: 34
+Enter number: 12
+Enter number: stop
+46
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ python3 j2.py
+0 1 2 3 4 5 6 7 8 9 
+
+7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 
+
+cat dog fish bird 
+
+cat dog fish bird 
+
+Enter any text: 
+0
+Enter city: 
+[]
+red
+green
+blue
+purple
+Enter any: 
+[]
+Exercise 3
+Enter number: 34
+Less than 50
+Enter number: stop
+Exercise 4
+Enter number: 34
+Enter number: 23
+Enter number: 4
+Enter number: 3
+Enter number: stop
+64
+140-182-198-229:Python-A290 Owl$ emacs j2.py
+140-182-198-229:Python-A290 Owl$ 
