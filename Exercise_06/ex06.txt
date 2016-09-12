@@ -1,0 +1,113 @@
+Last login: Fri Sep  9 22:41:59 on console
+140-182-198-234:~ Owl$ ssh woha@silo.soic.indiana.edu
+woha@silo.soic.indiana.edu's password: 
+Permission denied, please try again.
+woha@silo.soic.indiana.edu's password: 
+Last failed login: Sat Sep 10 21:40:50 EDT 2016 from 140-182-198-234.dhcp-bl.indiana.edu on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Thu Sep  8 11:32:41 2016 from 140-182-197-224.dhcp-bl.indiana.edu
+
+
+*******************************************************************
+**   Indiana University School of Informatics and Computing      **
+**             ** For Authorized Use Only **                     **
+*******************************************************************
+**  For general SoIC computing information, please see:          **
+**      http://help.soic.indiana.edu/                            **
+**                                                               **
+**  To submit a problem report or question, please see:          **
+**      http://help.soic.indiana.edu/request                     **
+*******************************************************************
+
+
+[woha@silo ~]$ python4
+-bash: python4: command not found
+[woha@silo ~]$ python3
+Python 3.5.2 (default, Aug 19 2016, 07:40:05) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-4)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> employee[987654321]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'employee' is not defined
+>>> employee = {'864-20-9753':['Anna', 'Karenina'], '987-65-4321': ['Yu', 'Tsun'], '100-01-0010': ['Hans', 'Castorp']}
+>>> employee['987-65-4321']
+['Yu', 'Tsun']
+>>> len({}_
+  File "<stdin>", line 1
+    len({}_
+          ^
+SyntaxError: invalid syntax
+>>> len({})
+0
+>>> typr({})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'typr' is not defined
+>>> type({})
+<class 'dict'>
+>>> employe
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'employe' is not defined
+>>> employee
+{'987-65-4321': ['Yu', 'Tsun'], '864-20-9753': ['Anna', 'Karenina'], '100-01-0010': ['Hans', 'Castorp']}
+>>> employee['123-45-6789'] = ['Harry', 'Poster']
+>>> employee
+{'987-65-4321': ['Yu', 'Tsun'], '864-20-9753': ['Anna', 'Karenina'], '100-01-0010': ['Hans', 'Castorp'], '123-45-6789': ['Harry', 'Poster']}
+>>> employee
+{'987-65-4321': ['Yu', 'Tsun'], '864-20-9753': ['Anna', 'Karenina'], '100-01-0010': ['Hans', 'Castorp'], '123-45-6789': ['Harry', 'Poster']}
+>>> employee['123-45-6789'] = ['Tom', 'Jones']
+>>> employee
+{'987-65-4321': ['Yu', 'Tsun'], '864-20-9753': ['Anna', 'Karenina'], '100-01-0010': ['Hans', 'Castorp'], '123-45-6789': ['Tom', 'Jones']}
+>>> employee = {[1,2]:1,[2,3]:3}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> days = {'Mo':1, 'Tu':2,'We':3}
+>>> days['Mo']
+1
+>>> 
+KeyboardInterrupt
+>>> ls
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> grades = [95, 96, 100, 85, 95, 90, 95, 100, 100]
+>>> freq = frequency(grades)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'frequency' is not defined
+>>> def frequency(ls):
+...     counters={}
+...     for item in ls:
+...             if item in counters:
+...                     counters[item] += 1
+...             else:
+...                     counters[item]=1
+...     return counters
+... 
+>>> freq = requency(grades)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'requency' is not defined
+>>> freq = frequency(grades)
+>>> freq[90]
+1
+>>> freq[95]
+3
+>>> text = 'all animals are equal but some animals are more equal than other'
+>>> word_freq(text)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'word_freq' is not defined
+>>> def word_freq(ls):
+...     sp_ls = ls.split( )
+...     ans_ls = []
+...     for i in sp_ls:
+...             for j in ans_ls:
+...                     if i == j:
+...                             break
+...             
+... 
+>>> 
