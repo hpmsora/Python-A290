@@ -1,0 +1,5 @@
+#Exercise 1
+def hello(name):
+    print('Welcome, ' + str(name) + ' to Python.')
+
+hello('Malgosia')
