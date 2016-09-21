@@ -1,0 +1,299 @@
+Last login: Tue Sep 20 01:00:42 on ttys000
+140-182-197-22:~ Owl$ ls
+AndroidStudioProjects Dropbox			Music
+Applications	      				Google Drive		Pictures
+Desktop						       			HD_log.txt		Public
+Documents											Library
+Downloads												Movies
+140-182-197-22:~ Owl$ python3
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 26 2016, 10:47:25) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.getcwd()
+'/Users/Owl'
+>>> os.chdir('/Users/cepope')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cepope'
+>>> import random
+>>> dir(random)
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_ceil', '_cos', '_e', '_exp', '_inst', '_log', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+>>> quit()
+140-182-197-22:~ Owl$ cd ..
+140-182-197-22:Users Owl$ ls
+Guest		     Owl  Shared
+140-182-197-22:Users Owl$ cd Owl/
+140-182-197-22:~ Owl$ cd Desktop/
+140-182-197-22:Desktop Owl$ python3
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 26 2016, 10:47:25) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+140-182-197-22:Desktop Owl$ ls
+A290iOSwoha				Vocab.docx
+Android-A290							iOS-A290
+Python-A290										iOS-Simple-Project
+Reference List - Won Yong Ha.docx							하원용-BU.docx
+Resume - Won Yong Ha.docx
+140-182-197-22:Desktop Owl$ cd Python-A290/
+140-182-197-22:Python-A290 Owl$ s
+-bash: s: command not found
+140-182-197-22:Python-A290 Owl$ ls
+Exercise_01		   Exercise_04	Exercise_07	README.md	j2.py~
+Exercise_02		   Exercise_05	Exercise_08	j1.py			j3.py
+Exercise_03		   Exercise_06	Homework01	j2.py				j3.py~
+140-182-197-22:Python-A290 Owl$ mkdir Exercise_09
+140-182-197-22:Python-A290 Owl$ ls
+Exercise_01		   Exercise_05	Exercise_09	j2.py
+Exercise_02		   Exercise_06	Homework01	j2.py~
+Exercise_03		   Exercise_07	README.md	j3.py
+Exercise_04		   Exercise_08	j1.py			j3.py~
+140-182-197-22:Python-A290 Owl$ cd Exercise_09
+140-182-197-22:Exercise_09 Owl$ ls
+140-182-197-22:Exercise_09 Owl$ emacs foo.txt
+140-182-197-22:Exercise_09 Owl$ python
+Python 2.7.10 (default, Oct 23 2015, 19:19:21) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+140-182-197-22:Exercise_09 Owl$ python3
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 26 2016, 10:47:25) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> infile = open('foo.txt')
+>>> infile = open('foo.txt','r')
+>>> os.getcwd()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'os' is not defined
+>>> import os
+>>> os.getcwd()
+'/Users/Owl/Desktop/Python-A290/Exercise_09'
+>>> os.chdir('/Users/cepope/Desktop')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cepope/Desktop'
+>>> os.chdir('/Users/owl/Desktop')
+>>> os.getced()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'os' has no attribute 'getced'
+>>> os.getcwd()
+'/Users/Owl/Desktop'
+>>> for each in os.listdir()
+  File "<stdin>", line 1
+    for each in os.listdir()
+                           ^
+SyntaxError: invalid syntax
+>>> for each in os.listdir():
+...     print(each)
+... 
+.DS_Store
+.localized
+A290iOSwoha
+Android-A290
+iOS-A290
+iOS-Simple-Project
+Python-A290
+Reference List - Won Yong Ha.docx
+Resume - Won Yong Ha.docx
+Vocab.docx
+하원용-BU.docx
+>>> os.chdir('/User/owl/Desktop/Python-A290/Exercise_09')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/User/owl/Desktop/Python-A290/Exercise_09'
+>>> os.getced()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'os' has no attribute 'getced'
+>>> os.getcwd()
+'/Users/Owl/Desktop'
+>>> os.chdir('/Python-A290/Exercise_09')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/Python-A290/Exercise_09'
+>>> os.chdir('/Python-A290')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/Python-A290'
+>>> os.chdir('/User/owl/Desktop')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: '/User/owl/Desktop'
+>>> os.chdir('/Users/owl/Desktop/Python-A290/Exercise_09')
+>>> os.getowd()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'os' has no attribute 'getowd'
+>>> os.getcwd()
+'/Users/Owl/Desktop/Python-A290/Exercise_09'
+>>> infile = open(poem.txt, 'r')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'poem' is not defined
+>>> infile = open('poem.txt', 'r')
+>>> content = infile.read()
+>>> print(content
+... )
+Once upon a midnight dreary, while I pondered weak and weary,
+Over many a quaint and curious volume of forgotten lore,
+While I nodded, nearly napping, suddenly there came a tapping,
+As of some one gently rapping, rapping at my chamber door.
+'Tis some visitor,' I muttered, 'tapping at my chamber door -
+Only this, and nothing more.'
+
+Ah, distinctly I remember it was in the bleak December,
+And each separate dying ember wrought its ghost upon the floor.
+Eagerly I wished the morrow; - vainly I had sought to borrow
+From my books surcease of sorrow - sorrow for the lost Lenore -
+For the rare and radiant maiden whom the angels named Lenore -
+Nameless here for evermore.
+
+And the silken sad uncertain rustling of each purple curtain
+Thrilled me - filled me with fantastic terrors never felt before;
+So that now, to still the beating of my heart, I stood repeating
+'Tis some visitor entreating entrance at my chamber door -
+Some late visitor entreating entrance at my chamber door; -
+This it is, and nothing more,'
+
+Presently my soul grew stronger; hesitating then no longer,
+'Sir,' said I, 'or Madam, truly your forgiveness I implore;
+But the fact is I was napping, and so gently you came rapping,
+And so faintly you came tapping, tapping at my chamber door,
+That I scarce was sure I heard you' - here I opened wide the door; -
+Darkness there, and nothing more.
+
+Deep into that darkness peering, long I stood there wondering, fearing,
+Doubting, dreaming dreams no mortal ever dared to dream before;
+But the silence was unbroken, and the darkness gave no token,
+And the only word there spoken was the whispered word, 'Lenore!'
+This I whispered, and an echo murmured back the word, 'Lenore!'
+Merely this and nothing more.
+
+Back into the chamber turning, all my soul within me burning,
+Soon again I heard a tapping somewhat louder than before.
+'Surely,' said I, 'surely that is something at my window lattice;
+Let me see then, what thereat is, and this mystery explore -
+Let my heart be still a moment and this mystery explore; -
+'Tis the wind and nothing more!'
+
+Open here I flung the shutter, when, with many a flirt and flutter,
+In there stepped a stately raven of the saintly days of yore.
+Not the least obeisance made he; not a minute stopped or stayed he;
+But, with mien of lord or lady, perched above my chamber door -
+Perched upon a bust of Pallas just above my chamber door -
+Perched, and sat, and nothing more.
+
+Then this ebony bird beguiling my sad fancy into smiling,
+By the grave and stern decorum of the countenance it wore,
+'Though thy crest be shorn and shaven, thou,' I said, 'art sure no craven.
+Ghastly grim and ancient raven wandering from the nightly shore -
+Tell me what thy lordly name is on the Night's Plutonian shore!'
+Quoth the raven, 'Nevermore.'
+
+Much I marvelled this ungainly fowl to hear discourse so plainly,
+Though its answer little meaning - little relevancy bore;
+For we cannot help agreeing that no living human being
+Ever yet was blessed with seeing bird above his chamber door -
+Bird or beast above the sculptured bust above his chamber door,
+With such name as 'Nevermore.'
+
+But the raven, sitting lonely on the placid bust, spoke only,
+That one word, as if his soul in that one word he did outpour.
+Nothing further then he uttered - not a feather then he fluttered -
+Till I scarcely more than muttered 'Other friends have flown before -
+On the morrow he will leave me, as my hopes have flown before.'
+Then the bird said, 'Nevermore.'
+
+Startled at the stillness broken by reply so aptly spoken,
+'Doubtless,' said I, 'what it utters is its only stock and store,
+Caught from some unhappy master whom unmerciful disaster
+Followed fast and followed faster till his songs one burden bore -
+Till the dirges of his hope that melancholy burden bore
+Of "Never-nevermore."'
+
+But the raven still beguiling all my sad soul into smiling,
+Straight I wheeled a cushioned seat in front of bird and bust and door;
+Then, upon the velvet sinking, I betook myself to linking
+Fancy unto fancy, thinking what this ominous bird of yore -
+What this grim, ungainly, ghastly, gaunt, and ominous bird of yore
+Meant in croaking 'Nevermore.'
+
+This I sat engaged in guessing, but no syllable expressing
+To the fowl whose fiery eyes now burned into my bosom's core;
+This and more I sat divining, with my head at ease reclining
+On the cushion's velvet lining that the lamp-light gloated o'er,
+But whose velvet violet lining with the lamp-light gloating o'er,
+She shall press, ah, nevermore!
+
+Then, methought, the air grew denser, perfumed from an unseen censer
+Swung by Seraphim whose foot-falls tinkled on the tufted floor.
+'Wretch,' I cried, 'thy God hath lent thee - by these angels he has sent thee
+Respite - respite and nepenthe from thy memories of Lenore!
+Quaff, oh quaff this kind nepenthe, and forget this lost Lenore!'
+Quoth the raven, 'Nevermore.'
+
+'Prophet!' said I, 'thing of evil! - prophet still, if bird or devil! -
+Whether tempter sent, or whether tempest tossed thee here ashore,
+Desolate yet all undaunted, on this desert land enchanted -
+On this home by horror haunted - tell me truly, I implore -
+Is there - is there balm in Gilead? - tell me - tell me, I implore!'
+Quoth the raven, 'Nevermore.'
+
+'Prophet!' said I, 'thing of evil! - prophet still, if bird or devil!
+By that Heaven that bends above us - by that God we both adore -
+Tell this soul with sorrow laden if, within the distant Aidenn,
+It shall clasp a sainted maiden whom the angels named Lenore -
+Clasp a rare and radiant maiden, whom the angels named Lenore?'
+Quoth the raven, 'Nevermore.'
+
+'Be that word our sign of parting, bird or fiend!' I shrieked upstarting -
+'Get thee back into the tempest and the Night's Plutonian shore!
+Leave no black plume as a token of that lie thy soul hath spoken!
+Leave my loneliness unbroken! - quit the bust above my door!
+Take thy beak from out my heart, and take thy form from off my door!'
+Quoth the raven, 'Nevermore.'
+
+And the raven, never flitting, still is sitting, still is sitting
+On the pallid bust of Pallas just above my chamber door;
+And his eyes have all the seeming of a demon's that is dreaming,
+And the lamp-light o'er him streaming throws his shadow on the floor;
+And my soul from out that shadow that lies floating on the floor
+Shall be lifted - nevermore!
+
+
+
+>>> import ex09.py
+1125
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named 'ex09.py'; 'ex09' is not a package
+>>> package ex09.py
+  File "<stdin>", line 1
+    package ex09.py
+               ^
+SyntaxError: invalid syntax
+>>> package 'ex09.py'
+  File "<stdin>", line 1
+    package 'ex09.py'
+                    ^
+SyntaxError: invalid syntax
+>>> infile.close()
+>>> infile = open('test.txt', 'w')
+>>> infile.write('T')
+1
+>>> infile.write('his is the first line.')
+22
+>>> infile.write('      ')
+1
+>>> infile.wirte('still the frist line...\n')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'wirte'
+>>> infile.close()
+>>> outfile = open('test.txt', 'w')
+>>> outfile.write('T')
+1
+>>> 
