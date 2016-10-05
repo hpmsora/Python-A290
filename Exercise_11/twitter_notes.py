@@ -101,4 +101,14 @@ def sortingWords(contents):
     wordList = sorted(word_dict.items(), key = operator.itemgetter(1))
     return wordList
 
+def writingFile(contents):
+    file = open("output.txt", "w")
+    subjects = ""
+    for dict in contents:
+        subjects = str(dict[0]) + " " + str(dict[1]) + "\n"
+        file.write(subjects)
+        subject = ""
+    file.close()
+
 print(sortingWords(content))
+writingFile(sortingWords(content))
