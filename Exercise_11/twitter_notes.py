@@ -26,7 +26,7 @@ def countingWords(contents):
             word_dict[word] += 1
     return word_dict
 
-countingWords(content)
+#countingWords(content)
 
 # * undesirable noise & words
     # puncuation, special characters
@@ -53,7 +53,7 @@ def desirableCountingWords(contents):
             word_dict[word] += 1
     return word_dict
 
-desirableCountingWords(content)
+#desirableCountingWords(content)
 
 # * word uniqueness
     # maybe check using .lower()
@@ -65,7 +65,7 @@ def uniquenessWords(contents):
             wording.append(word.lower())
     return wording
 
-print(uniquenessWords(content))
+#uniquenessWords(content)
 
 # * sorting
     # dictionaries are not a sequence
@@ -89,4 +89,16 @@ print(uniquenessWords(content))
     # stop = stopwords
             # ** BTW: to reduce list traversal time on stopwords
             # consider converting stopwords to hashable type set
-            
+import operator
+def sortingWords(contents):
+    words = contents.split(' ')
+    word_dict = dict()
+    for i in stopwords:
+        word_dict[i] = 0
+    for word in words:
+        if word in stopwords:
+            word_dict[word] += 1
+    wordList = sorted(word_dict.items(), key = operator.itemgetter(1))
+    return wordList
+
+print(sortingWords(content))
