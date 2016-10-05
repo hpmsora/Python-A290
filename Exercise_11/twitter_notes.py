@@ -7,20 +7,30 @@ import operator
     # also writing output to a file we designate
 def openFile(name):
     contents = open(name,'r')
-    print(contents)
+    subject = contents.read()
+    return subject
 
-openFile(trump.txt)
+content = openFile("trump.txt")
 
 # * word accumlation
     # consider how to store the wordcount
     # we could use lists, tuples, dictionaries...
     # choosing dictionaries because of their efficient structure
+def countingWords(contents):
+    words = contents.split(' ')
+    word_dict = dict()
+    for word in words:
+        if not word in word_dict.keys():
+            word_dict[word] = 1
+        else:
+            word_dict[word] += 1
+    return word_dict
+
+countingWords(content)
 
 # * undesirable noise & words
     # puncuation, special characters
     # stopwords (ie., pronouns, definite articles, etc.)
-
-
 stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your', 'yours',
 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', 'her', 'hers',
 'herself', 'it', 'its', 'itself', 'they', 'them', 'their', 'theirs', 'themselves',
@@ -33,10 +43,29 @@ stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you',
 'there', 'when', 'where', 'why', 'how', 'all', 'any', 'both', 'each', 'few', 'more',
 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 'same', 'so',
 'than', 'too', 'very', 's', 't', 'can', 'will', 'just', 'don', 'should', 'now']
+def desirableCountingWords(contents):
+    words = contents.split(' ')
+    word_dict = dict()
+    for i in stopwords:
+        word_dict[i] = 0
+    for word in words:
+        if word in stopwords:
+            word_dict[word] += 1
+    return word_dict
 
+desirableCountingWords(content)
 
 # * word uniqueness
     # maybe check using .lower()
+def uniquenessWords(contents):
+    words = contents.split(' ')
+    wording = []
+    for word in words:
+        if not word.lower() in wording:
+            wording.append(word.lower())
+    return wording
+
+print(uniquenessWords(content))
 
 # * sorting
     # dictionaries are not a sequence
