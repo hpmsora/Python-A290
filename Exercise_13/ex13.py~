@@ -1,0 +1,27 @@
+# Won Yong Ha
+# Exercise 13
+
+#exercise 1
+def listComprehension1(contents):
+    words = contents.split()
+    word_length = []
+    for word in words:
+        if word != "the":
+            word_length.append(len(word))
+    return word_length
+
+print("Exercise 1\n")
+print(listComprehension1("the quick brown fox jumps over the lazy dog"))
+
+#exercise 2
+def listComprehension2(contents):
+    new_list = []
+    for i in contents:
+        if i >= 0:
+            new_list.append(i)
+    return new_list
+
+print("Exercise 2\n")
+print([34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7])
+
+#exercise 3

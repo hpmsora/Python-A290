@@ -1,0 +1,8 @@
+# Won Yong Ha
+# EX12
+
+#Exercise 1
+def news(url, ls):
+    infile = open(url)
+    contents = infile.read()
+    print(contents)
